@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <h1>💰 Expense Tracker</h1>
+
+        <div class="user-info" id="userInfo">
+            <span id="logedInName"></span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <!-- Add Expense Card -->
+        <section class="card">
+            <h2>Add Expense</h2>
+
+            <input type="text" placeholder="Expense title" id="title" />
+            <input type="number" placeholder="Amount" id="amount" />
+
+            <select id="category">
+                <option>Select Category</option>
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Bills</option>
+                <option>Shopping</option>
+            </select>
+
+            <input type="date" id="date" />
+
+            <button class="primary-btn" onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <!-- Expenses List -->
+        <section class="card">
+            <h2>Your Expenses</h2>
+
+            <div class="expense-item" id="expenceItem">
+            </div>
+
+            <p class="empty-text" id="emptyText"></p>
+        </section>
+
+        <!-- Summary -->
+        <section class="card summary">
+            <h2>Total Expense</h2>
+            <h1 id="totalExpence">Rs 800</h1>
+        </section>
+
+    </main>
+
+    <script type="module" src="./javascript/dashboard.js"></script>
+
+</body>
+
+</html>

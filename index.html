@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker | Auth</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <h1>💰 Expense Tracker</h1>
+    <div class="auth-wrapper">
+        <!-- Register -->
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            <p class="subtitle">Track your expenses smartly</p>
+
+            <input type="text" placeholder="Full Name" id="fullName" />
+            <input type="email" placeholder="Email Address" id="registerEmail" />
+            <input type="password" placeholder="Password" id="registerPassword" />
+
+            <button class="primary-btn" onclick="register()">Register</button>
+        </div>
+
+        <!-- Login -->
+        <div class="auth-card">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to continue</p>
+
+            <input type="email" placeholder="Email Address" id="loginEmail" />
+            <input type="password" placeholder="Password" id="loginPassword" />
+
+            <button class="primary-btn" onclick="login()">Login</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="./javascript/script.js"></script>
+
+</body>
+
+</html>
